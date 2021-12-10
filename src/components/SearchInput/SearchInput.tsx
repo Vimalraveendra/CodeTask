@@ -1,8 +1,12 @@
 import "./SearchInput.css"
 import {FaSearch} from "react-icons/fa"
 
+export interface Props{
+    handleSearch:(e:React.SyntheticEvent<HTMLInputElement>)=>void,
+    search:string
+}
 
-const SearchInput=({handleSearch,search})=>{
+const SearchInput:React.FC<Props> =({handleSearch,search})=>{
     return(
         <div className="input-container">
             <div className="input-icons">

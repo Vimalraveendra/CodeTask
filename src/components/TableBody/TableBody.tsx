@@ -1,4 +1,16 @@
-const TableBody = ({id,description,date,assigned,status,priority,item})=>{  
+import { IData } from "../../customHook/useFetch/useFetch";
+import { IAssigned } from "../../customHook/useFetch/useFetch";
+
+export interface Props{
+  item:IData,
+  id:number,
+  description:string,
+  date:string,
+  assigned:Array<IAssigned>,
+  status:string,
+  priority:string,
+}
+const TableBody:React.FC<Props> = ({id,description,date,assigned,status,priority,item})=>{  
     let arr =Object.keys(item).map(item=>(item==="work_order_id")?item =(item[0]+item[1]+" "+item.slice(11)).toUpperCase(): item.toUpperCase())
         
     return(
