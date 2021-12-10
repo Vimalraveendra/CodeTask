@@ -6,7 +6,6 @@ import TableBody from "../TableBody/TableBody"
 
 
 const TableCollection = ({data})=>{
-   
     return(
     <div className='table-container'>
         <table id='table'>
@@ -32,8 +31,7 @@ const TableCollection = ({data})=>{
                   assigned={item.assigned_to}
                   status={item.status}
                   priority={item.priority}
-              
-    
+                   item={item}
                   />
               })
           }
