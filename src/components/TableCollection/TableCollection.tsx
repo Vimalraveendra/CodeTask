@@ -2,10 +2,10 @@
 import "./TableCollections.css"
 import TableHeader from "../TableHeader/TableHeader"
 import TableBody from "../TableBody/TableBody"
+import { IData } from "../../customHook/useFetch/useFetch"
 
 
-
-const TableCollection = ({data})=>{
+const TableCollection = ({data}:{data:Array<IData>})=>{
     return(
     <div className='table-container'>
         <table id='table'>
