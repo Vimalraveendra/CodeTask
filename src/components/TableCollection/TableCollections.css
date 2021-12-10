@@ -1,0 +1,42 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#table {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+  width: 70%;
+}
+caption {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#table td,
+#table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table td {
+  text-align: start;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+#table th {
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  vertical-align: middle;
+}
