@@ -21,7 +21,6 @@ const [data,setData]=useState<Array<IData>>([])
   useEffect(()=>{
     const getData=async ()=>{
     const response = await requestData();
-    // console.log("res",response.response.data)
     setData(response.response.data)
     }
     getData();
